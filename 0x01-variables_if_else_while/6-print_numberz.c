@@ -1,7 +1,8 @@
 #include <stdio.h>
 /**
- * main - Printssingle digit numbers
- *
+ * main - entry point
+ * Description: Printssingle digit numbers
+ * Return - 0
  */
 int main(void)
 {
