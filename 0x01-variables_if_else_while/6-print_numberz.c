@@ -1,8 +1,9 @@
 #include <stdio.h>
 /**
  * main - entry point
- * Description: Printssingle digit numbers
- * Return - 0
+ *
+ * Description: Prints single digit numbers
+ * Return: 0
  */
 int main(void)
 {
