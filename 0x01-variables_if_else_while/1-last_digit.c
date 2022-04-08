@@ -1,9 +1,11 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/* more headers goes there */
-
-/* betty style doc for function main goes there */
+/**
+ * main - Prints a text according number
+ * 
+ * Return: Always (Success)
+ */
 int main(void)
 {
 	int n, lastd;
