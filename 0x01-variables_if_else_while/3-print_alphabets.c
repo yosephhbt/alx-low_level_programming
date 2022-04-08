@@ -5,8 +5,7 @@
  * Description: Prints the alphabetic in lower and upper case
  * 
  * Return: 0
- */
-
+ * */
 int main(void)
 {
 	char c;
