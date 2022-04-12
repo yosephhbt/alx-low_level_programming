@@ -8,7 +8,7 @@ int _islower(int c);
 int _isalpha(int c);
 int print_sign(int n);
 int _abs(int);
-int prit_last_digit(int nld);
+int print_last_digit(int n);
 int jack_bauer(void);
 int times_table(void);
 int add(int one, int two);
