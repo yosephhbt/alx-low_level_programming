@@ -15,9 +15,7 @@ int main(void)
 		{
 		sum += n;
 		n++;
+		}
 	}
 	return (sum);
-}
-
-
-			
+}			
