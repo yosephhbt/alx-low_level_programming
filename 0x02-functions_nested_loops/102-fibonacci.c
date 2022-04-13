@@ -6,17 +6,17 @@
  */
 int main(void)
 {
-	unsigned long i, num1, num2, temp;
-	
-	num1 = 0;
-	num2 = 1;
-	for (i = 0; i < 50; i++)
+	unsigned long count. i, j, k;
+
+	i = 0;
+	j = 1;
+	for (count = 0; count < 50; count++)
 	{
-		temp = num1 + num2;
-		num1 = num2;
-		num2 = temp;
-		printf("%lu", temp);
-		if (i == 49)
+		k = i + j;
+		i = j;
+		j = k;
+		printf("%lu", k);
+		if(count == 49)
 			putchar('\n');
 		else
 			printf(", ");
