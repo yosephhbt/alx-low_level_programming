@@ -16,7 +16,7 @@ int main(void)
 		num1 = num2;
 		num2 = temp;
 		printf("%d", temp);
-		if (count == 49)
+		if (i == 49)
 			putchar('\n');
 		else
 			printf(", ");
