@@ -6,7 +6,7 @@
  */
 int main(void)
 {
-	unsigned long count. i, j, k;
+	unsigned long count, i, j, k;
 
 	i = 0;
 	j = 1;
