@@ -25,7 +25,7 @@ int _atoi(char *s)
 			flag = 1;
 		if (*(s + i) == '-')
 			neg *= -1;
-		if(num != 0)
+		if (num != 0)
 		{
 			if ((*(s + i + 1) < '0') || (*(s + i + 1) > '9'))
 				flag = 0;
