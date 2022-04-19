@@ -1,11 +1,12 @@
 #include "main.h"
-/**puts_half - prints half of the string
+/**
+ * puts_half - prints half of the string
  * @str: input 1
  * Return: void
  */
 void puts_half(char *str)
 {
-	int i, n , len;
+	int i, n, len;
 
 	len = 0;
 	for (i = 0; str[i] != '\0'; i++)
