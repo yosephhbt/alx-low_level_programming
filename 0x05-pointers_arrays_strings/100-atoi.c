@@ -5,7 +5,7 @@
  * @s: pointer for string to parse
  * Return: int
  */
-int _atio(char *s)
+int _atoi(char *s)
 {
 	unsigned int num = 0;
 	int flag = -1, i = 0, neg = 1;
