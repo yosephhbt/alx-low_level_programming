@@ -1,5 +1,5 @@
 #include "main.h"
-/*8
+/**
  * print_diagsums - print the sum of two diagonals of square
  * @a: the matrix
  * @size: the size
