@@ -16,7 +16,7 @@ int sqrt2(int a, int b)
 /**
  * _sqrt_recursion - return square root of n
  * @n: Number integer
- * Retrun: on success 1
+ * Return: on success 1
  */
 int _sqrt_recursion(int n)
 {
