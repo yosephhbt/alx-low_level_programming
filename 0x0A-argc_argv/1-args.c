@@ -15,6 +15,6 @@ int main(int argc, char *argv[])
 		counter++;
 		(*argv)++;
 	}
-	printf("%d\n", countier - 1);
+	printf("%d\n", counter - 1);
 	return (0);
 }
