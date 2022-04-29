@@ -8,6 +8,13 @@
  */
 int main(int argc, char *argv[])
 {
-	printf(argc - 1);
+	int counter;
+
+	for (counter = 0; counter < argc;)
+	{
+		counter++;
+		(*argv)++;
+	}
+	printf("%d\n", countier - 1);
 	return (0);
 }
