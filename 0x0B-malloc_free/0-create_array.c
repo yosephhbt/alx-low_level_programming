@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "holberton.h"
+#include "main.h"
 /**
  * create_array - creates an array of chars and init it with a char
  * @size: the isze of the memory to print
