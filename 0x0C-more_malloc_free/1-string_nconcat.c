@@ -10,33 +10,33 @@
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	unsigned int s1Len, s2Len, i, amount;
+	unsigned int s1Len, s2Len, i, j;
 	char *conStr;
 
-	i = 0;
-	s1Len = 0;
-	s2Len = 0;
+
 	if (s1 == NULL)
 		s1 = "";
 	if (s2 == NULL)
 		s2 = "";
-	while (*(s1 + s1Len))
+	s1Len = s2Len = 0;
+	while (s1[s1Len] != '\0')
 		s1Len++;
-	while (*(s2 + s2Len))
+	while (s2[s2Len] != '\0')
 		s2Len++;
 	if (n >= s2Len)
-		amount = s2Len;
-	else
-		amount = n;
-	conStr = malloc((s1Len + amount + 1) * sizeof(char));
+		n = s2Len;
+	conStr = (char *)malloc((s1Len + n + 1) * sizeof(char));
 	if (conStr == NULL)
 		return (NULL);
 
-	for (i = 0; i < s1Len; i++)
-		*(conStr + i) = *(s1 + i);
-	for (i = s1Len; i < (s1Len + amount); i++)
-		*(conStr + i) = *(s2 + i - s1Len);
-	*(conStr + i) = '\0';
+	for (i = 0; s1[i] != '\0'; i++)
+		conStr[i] = s1[i];
+	for (j = 0; j < n && s2[j] != '\0'; j++)
+	{
+		conStr[i] = s2[j];
+		i++;
+	}
+	conStr[i] = '\0';
 	return (conStr);
 }
 
