@@ -25,7 +25,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		s2Len++;
 	if (n >= s2Len)
 		n = s2Len;
-	conStr = (char *)malloc((s1Len + n + 1) * sizeof(char));
+	conStr = (char *) malloc((s1Len + n + 1) * sizeof(char));
 	if (conStr == NULL)
 		return (NULL);
 
