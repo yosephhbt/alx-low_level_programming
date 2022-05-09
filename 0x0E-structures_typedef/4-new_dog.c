@@ -12,7 +12,7 @@ int _strlen(const char *str)
 	
 	while (*str++)
 		length++;
-	return (lenght);
+	return (length);
 }
 /**
  * _strcopy - a function that returns @dest with a copy iof a string from @src
