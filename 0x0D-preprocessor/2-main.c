@@ -1,4 +1,4 @@
-#include <stdlib.h>
+#include <stdio.h>
 /**
  * main - program that prints out the name of the file being compiled
  * @void: Noting
