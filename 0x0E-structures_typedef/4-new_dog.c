@@ -1,25 +1,25 @@
 #include <Stdlib.h>
+#include <stdio.h>
 #include "dog.h"
 /**
  * _strlen - a function that gets a length of string
  * @str: the string to get the length
  * Return: lenght of @str
  */
-int _strlen(const char *str)
+int _strlen(char *str)
 {
-	int length = 0;
+	int i;
 
-	
-	while (*str++)
-		length++;
-	return (length);
+	for (i = 0; str[i]; i++)
+		;
+	return (i);
 }
 /**
  * _strcopy - a function that returns @dest with a copy iof a string from @src
  * @src: string to copy
  * Return: @dest
  */
-char *_strcopy(char *dest, char *src)
+char *_strcpy(char *dest, char *src)
 {
 	int i;
 
@@ -38,29 +38,34 @@ char *_strcopy(char *dest, char *src)
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	dog_t *dog;
+	dog_t *newDog = NULL;
+	char *newName, *newOwner;
+	int newNameLen, newOwnerLen;
 
 
-	if (!name || age < 0 || !owner)
+	if (name == NULL || owner == NULL)
 		return (NULL);
-	dog = (dog_t *) malloc(sizeof(dog_t));
-	if (dog == NULL)
+	newDog = malloc(sizeof(dog_t));
+	if (newDog == NULL)
 		return (NULL);
-	dog->name = malloc(sizeof(char) * (_strlen(name) + 1));
-	if ((*dog).name == NULL)
+	newNameLen = _strlen(name);
+	newName = malloc(sizeof(char *) * (newNameLen + 1));
+
+	if (newName == NULL)
 	{
-		free(dog);
+		free(newDog);
 		return (NULL);
 	}
-	dog->owner = malloc(sizeof(char) * (_strlen(owner) + 1));
-	if ((*dog).owner == NULL)
+	newOwnerLen = _strlen(owner);
+	newOwner = malloc(sizeof(char *) * (newOwnerLen + 1));
+	if (newOwner == NULL)
 	{
-		free(dog->name);
-		free(dog);
+		free(newName);
+		free(newDog);
 		return (NULL);
 	}
-	dog->name = _strcopy(dog->name, name);
-	dog->age = age;
-	dog->owner = _strcopy(dog->owner, owner);
-	return (dog);
+	newDog->name = _strcpy(newName, name);
+	newDog->age = age;
+	newDog->owner = _strcpy(newOwner, owner);
+	return (newDog);
 }
