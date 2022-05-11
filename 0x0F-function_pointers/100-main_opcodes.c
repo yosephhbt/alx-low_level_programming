@@ -1,6 +1,6 @@
 #include "function_pointers.h"
 /**
- * main -prints opcodes of its own function
+ * main - prints opcodes of its own function
  * @argc: number of arguments
  * @argv: vector of arguments
  * Return: 0 if no errors
