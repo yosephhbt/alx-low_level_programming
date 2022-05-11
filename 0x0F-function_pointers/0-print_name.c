@@ -1,0 +1,12 @@
+#include "function_pointer.h"
+/**
+ * print_name - writes the character c to stdout
+ * @name: String
+ * @f: pointer to function with char
+ * Return: Noting
+ */
+void print_name(char *name, void (*f)(char *))
+{
+	if (f != 0)
+		f(name);
+}
