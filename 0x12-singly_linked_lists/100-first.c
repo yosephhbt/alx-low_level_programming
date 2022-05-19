@@ -1,6 +1,7 @@
 #include "lists.h"
+#include <stdio.h>
 /**
- * msg - prints a specific message
+ * before_main - prints a specific message
  * 
  * Return: no return
  */
