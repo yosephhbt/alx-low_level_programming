@@ -1,5 +1,6 @@
 #include <lists.h>
 #include <string.h>
+#include <stdlib.h>
 /**
  * add_node_end - adds a node at the end, my dude
  * @head: points to the head
@@ -10,6 +11,7 @@ list_t *add_node_end(list_t **head, const char *str)
 {
 	list_t *newNode, *last;
 	unsigned int i;
+
 
 	if (!(head && str))
 		return (NULL);
@@ -33,6 +35,6 @@ list_t *add_node_end(list_t **head, const char *str)
 	{
 		last = last->next;
 	}
-	last->next = newNOde;
+	last->next = newNode;
 	return (newNode);
 }
