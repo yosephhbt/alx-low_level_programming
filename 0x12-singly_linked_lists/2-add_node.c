@@ -55,11 +55,11 @@ list_t *add_node(list_t **head, const char *str)
 
 	if (new_node == 0)
 	{
-		retrun (0);
+		return (0);
 	}
 	if (str == 0)
 	{
-		new_ndoe->str = 0;
+		new_node->str = 0;
 		new_node->len = 0;
 	}
 	else
