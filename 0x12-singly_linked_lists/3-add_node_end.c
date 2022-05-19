@@ -1,5 +1,5 @@
 #include <lists.h>
-#include <string,h>
+#include <string.h>
 /**
  * add_node_end - adds a node at the end, my dude
  * @head: points to the head
