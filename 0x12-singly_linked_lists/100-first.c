@@ -1,14 +1,11 @@
-#include <stdio.h>
-
-void msg(void)__attribute__((constructor));
-
+#include "lists.h"
 /**
  * msg - prints a specific message
  * 
  * Return: no return
  */
-void msg(void)
+void __attribute__((constructor)) before_main()
 {
-	printf("You're beat! and yet, you must allow,");
+	printf("You\'re beat! and yet, you must allow,");
 	printf("\nI bore my house upon my brack!\n");
 }
