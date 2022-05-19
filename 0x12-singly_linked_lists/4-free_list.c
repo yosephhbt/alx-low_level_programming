@@ -1,4 +1,6 @@
 #include "lists.h"
+#include <stdlib.h>
+#include <stddef.h>
 /**
  * free_list - frees a list
  * @head: points to hte begining of list
@@ -6,14 +8,9 @@
  */
 void free_list(list_t *head)
 {
-	list_t *phree;
-
-
-	while (head)
-	{
-		phree = head;
-		head = head->next;
-		free(phree->str);
-		free(phree);
-	}
+	if (head == 0)
+		return;
+	free_list(head->next);
+	free(head->str);
+	free(head);
 }
