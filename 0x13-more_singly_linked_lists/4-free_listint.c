@@ -1,5 +1,5 @@
-#include "list.h"
-#include <stdlin.h>
+#include "lists.h"
+#include <stdlib.h>
 /**
  * free_listint - frees memory of list
  * @head: head pointer of singly linked list
