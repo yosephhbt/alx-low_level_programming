@@ -14,7 +14,7 @@ size_t listint_len(const listint_t *h)
 
 	while (h != 0)
 		h = h->next, size++;
-	return(size);
+	return (size);
 }
 /**
  * insert_nodeint_at_index - inserts a new node at a given position
