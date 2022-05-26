@@ -1,4 +1,6 @@
 #include "main.h"
+#include <math.h>
+#include <stdio.h>
 /**
  * flip_bits - returns the number of bitsyou would need
  * to flip to get from one number to another

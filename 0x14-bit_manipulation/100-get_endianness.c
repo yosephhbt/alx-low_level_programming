@@ -1,4 +1,6 @@
 #include "main.h"
+#include <math.h>
+#include <stdio.h>
 /**
  * get_endianness - checks the endianness
  * void: no argument

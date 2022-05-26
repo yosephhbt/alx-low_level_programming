@@ -1,4 +1,6 @@
 #include "main.h"
+#include <math.h>
+#include <stdio.h>
 /**
  * set_bit - sets the value of a bit to 1 at a given index
  * @n: base 10 number

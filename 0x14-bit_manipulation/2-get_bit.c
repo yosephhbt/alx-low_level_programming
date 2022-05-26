@@ -1,4 +1,6 @@
 #include "main.h"
+#include <math.h>
+#include <stdio.h>
 /**
  * get_bit - returns the value of a bit a given index
  * @n: base 10 number
