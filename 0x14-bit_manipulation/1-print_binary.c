@@ -1,4 +1,5 @@
 #include "main.h"
+#include <math.h>
 /**
  * rev_bin - prints binary representation of number
  * @n: decimal number
