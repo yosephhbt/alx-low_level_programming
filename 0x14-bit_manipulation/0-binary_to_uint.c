@@ -6,7 +6,7 @@
  * @b: b is pointing to a string of 0 and 1 chars
  * Return: converted number
  */
-unsigned int binary_to uint(const char *b)
+unsigned int binary_to_uint(const char *b)
 {
 	unsigned int res  = 0, one, i;
 	int l = 0;
