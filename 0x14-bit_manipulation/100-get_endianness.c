@@ -3,7 +3,7 @@
 #include <stdio.h>
 /**
  * get_endianness - checks the endianness
- * void: no argument
+ * Prototype: int get_endianness(void)
  * Return: 0 if big, 1 if little endian
  */
 int get_endianness(void)
