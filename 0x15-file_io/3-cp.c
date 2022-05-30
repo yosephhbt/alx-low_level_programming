@@ -10,7 +10,7 @@ void close_file(int fd);
 
 /**
  * crate_buffer - allocates 1024 bytes for a bufffer.
- * Afile: the name of the file buffer is storing chars for
+ * @file: the name of the file buffer is storing chars for
  * Return: a pointer to the newly allocated buffer
  */
 char *create_buffer(char *file)
@@ -22,7 +22,7 @@ char *create_buffer(char *file)
 	if (buffer == NULL)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", file);
-		exite(99);
+		exit(99);
 	}
 	return (buffer);
 }
