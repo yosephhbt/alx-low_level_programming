@@ -6,6 +6,7 @@
 #include <stdlib.h>
 /**
  * append_text_to_file - function that appends text at the end
+ * @filename: char value
  * @text_content: NULL terminated string to append to end of file
  * Return: 1 or -1
  */
